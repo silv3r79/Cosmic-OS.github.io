@@ -55,9 +55,17 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
+
+/* No save */
+	img.no-save{
+		user-drag: none;
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;	
+	}
 /* Devices */
-	
 	.devices{
 		float:right;
 	}
@@ -2890,14 +2898,6 @@
 				background-color: #e7b788;
 			}
 
-			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
-			}
-
-			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
-			}
-
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
@@ -3320,14 +3320,6 @@
 				color: #e7b788;
 			}
 
-			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
-			}
-
-			#header.alt.style6 .logo strong {
-				color: #87c5a4;
-			}
-
 		body.is-loading #header.alt {
 			opacity: 0;
 		}
@@ -3542,26 +3534,22 @@
 
 		#banner.style1:after {
 			background-color: #6fc3df;
+			opacity: 0.6;
 		}
 
 		#banner.style2:after {
 			background-color: #8d82c4;
+			opacity: 0.6;
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #cc2a92;
+			opacity: 0.6;
 		}
 
 		#banner.style4:after {
 			background-color: #e7b788;
-		}
-
-		#banner.style5:after {
-			background-color: #8ea9e8;
-		}
-
-		#banner.style6:after {
-			background-color: #87c5a4;
+			opacity: 0.6;
 		}
 
 		body.is-loading #banner:after {
